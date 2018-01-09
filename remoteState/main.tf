@@ -26,7 +26,6 @@ resource "azurerm_public_ip" "pip" {
   domain_name_label            = "${var.hostname}"
 }
 
-
 resource "azurerm_lb" "lb" {
   name                = "LoadBalancer"
   location            = "${azurerm_resource_group.rg.location}"
@@ -57,7 +56,7 @@ resource "azurerm_lb_nat_pool" "np" {
 }
 
 resource "azurerm_storage_account" "stor" {
-  name                     = "${var.resource_group}rsfsdfsd"
+  name                     = "${var.resource_group}storsfsdf"
   location                 = "${azurerm_resource_group.rg.location}"
   resource_group_name      = "${azurerm_resource_group.rg.name}"
   account_tier             = "${var.storage_account_tier}"

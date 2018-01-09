@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 variable "resource_group_name" {
-    default = "terraform-test"
+    default = "terraform-test1"
 }
 
 module "network" {
