@@ -1,5 +1,6 @@
 variable "resource_group" {
   description = "The name of the resource group in which to create the virtual network."
+  default="demovjdtl"
 }
 
 variable "location" {
@@ -19,6 +20,7 @@ variable "storage_replication_type" {
 
 variable "hostname" {
   description = "A string that determines the hostname/IP address of the origin server. This string could be a domain name, IPv4 address or IPv6 address."
+  default = "demovjdtl"
 }
 
 variable "vm_sku" {
